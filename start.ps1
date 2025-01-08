@@ -1,2 +1,2 @@
 #!/bin/pwsh
-docker compose up
+docker compose -f compose_win.yaml up
