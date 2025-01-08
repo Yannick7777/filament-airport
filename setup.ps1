@@ -1,7 +1,7 @@
 #!/bin/pwsh
 
 $composer_docker_hash=$(docker build -q .)
-docker run --rm -v ./filament-airport:/var/www/html -it $composer_docker_hash composer update -W
+docker run --rm -v $pwd/filament-airport:/var/www/html -it $composer_docker_hash composer install
 cp env_docker filament-airport/.env
 cp env_docker .env
 docker compose up -d
