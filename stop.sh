@@ -1,2 +1,2 @@
-#!/bin/pwsh
+#!/bin/sh
 docker compose down
